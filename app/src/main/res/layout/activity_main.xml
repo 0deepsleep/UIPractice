@@ -40,15 +40,29 @@
         android:layout_height="wrap_content"
         android:text="한 줄 자기소개" />
 
-    <EditText
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="자동 로그인 하실?" />
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="자기 소개를 한줄로 입력하세요"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"/>
+        android:text="로그인" />
 
-    // singleLine : 일반 문장을 한줄로만 입력받고 싶을 때  true 값 대입
-    // imeOption : 엔터키의 종류를 바꾸고 싶을 때 사용 (search, done, go로 주로 쓰며 singleLine true일 때 주로 사용)
+    // ㅁ Button : 제일 기본이며 텍스트 속성으로 어떤 버튼인지 표기
+    // => 자매품 : ImageButton : text 대신 이미지 파일로 어떤 버튼인지 표기, 근데 안이뻐서 잘 안씀
+
+    // ㅁ ChenkBox : 동의여부 (true/false) 받아내는 용도
+    // => text 속성으로 어떤 체크박스인지 안내
+    // checked = true 로 설정하면 기본으로 체크 돼서 보여짐
+
+    // ㅁ RadioButton : 객관식 선택을 받고싶을 때 가끔 사용 함
+
+
+
+
 
 
 
