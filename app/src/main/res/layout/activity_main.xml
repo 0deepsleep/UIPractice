@@ -1,18 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="아이디"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    // hint : 흐리게 글씨있고 입력하면 사라지는 거
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일 양식으로 입력"
+        android:inputType="textEmailAddress"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    //inputType : 사용자 입력할 때 데이터 종류에 따라 편한 키보드 띄움
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"/>
+    // input textPassword하면 비번 칠 때 땡댕이로 바뀜
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한 줄 자기소개" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="자기 소개를 한줄로 입력하세요"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"/>
+
+    // singleLine : 일반 문장을 한줄로만 입력받고 싶을 때  true 값 대입
+    // imeOption : 엔터키의 종류를 바꾸고 싶을 때 사용 (search, done, go로 주로 쓰며 singleLine true일 때 주로 사용)
+
+
+
+
+
+</LinearLayout>
