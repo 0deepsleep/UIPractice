@@ -29,9 +29,9 @@ class MainActivity : AppCompatActivity() {
                     val formattedMsg = "입력한 아이디는 ${inputEmail} 입니다."
                     Toast.makeText(this, formattedMsg, Toast.LENGTH_SHORT).show()
                 }
-
-
             }
+
+
             // 입력한 아이디가 admin@naver.com 이면 관리자 입니다 토스트
             // student 면 학생
             // parent 면  학부모
@@ -52,6 +52,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         loginButton.setOnLongClickListener {
+
+            // 로그로 0부터 5까지 숫자 출력
+
+            for (i in 0..5){
+                Log.d("for문 연습", "${i}")
+            }
             Log.d("로그인버튼", "버튼을 길게 누름")
             return@setOnLongClickListener false
             // return@함수이름 => 해당 함수의 결과로 설정 명시
@@ -125,6 +131,12 @@ class MainActivity : AppCompatActivity() {
 
 
 
+===================================================
+    ㅁ 반복문
+    for문 좀 특이 함
 
+    for(i in 0..5){
+                // id의 0부터 5까지의 값이 담기면서 순서대로 실행 됨
+            }
 
      */
