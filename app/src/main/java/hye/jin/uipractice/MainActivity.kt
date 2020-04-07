@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val inputEmail = emailEdt.text.toString()
             Log.d("로그인버튼", "버튼 클릭 됨")
 
-            val formattedStr = "입력한 아이디는 ${inputEmail} 입니다."
+            val formattedStr = "입력한 아이디는 ${inputEmail} 입니다!"
             Toast.makeText(this, formattedStr, Toast.LENGTH_SHORT).show()
 
         }
